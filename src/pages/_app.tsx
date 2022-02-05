@@ -1,18 +1,13 @@
 import type { AppProps } from 'next/app';
-import { useState } from 'react';
-import { ThemeProvider } from 'styled-components';
-import GlobalStyle from 'styles/GlobalStyles';
-import themes, { ThemeName } from 'styles/themes';
+import StyleProvider from 'styles/StyleProvider';
+import { wrapper } from '../store';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [themeState, setThemeState] = useState<ThemeName>('light');
-  const theme = themes[themeState];
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
+    <StyleProvider>
       <Component {...pageProps} />
-    </ThemeProvider>
+    </StyleProvider>
   );
 }
 
-export default MyApp;
+export default wrapper.withRedux(MyApp);

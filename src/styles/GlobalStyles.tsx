@@ -9,7 +9,8 @@ const globalStyle = css`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-y: overlay;
-    background-color: #fbfbfb;
+    background-color: ${(props) => props.theme.colors.background};
+    color: ${(props) => props.theme.colors.font};
   }
   a {
     text-decoration: none;

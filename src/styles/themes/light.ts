@@ -4,6 +4,7 @@ const light = {
 
   colors: {
     background: 'white',
+    font: 'black',
     primary: 'red',
     secondary: 'yellow',
   },

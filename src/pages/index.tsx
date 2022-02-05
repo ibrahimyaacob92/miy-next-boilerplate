@@ -1,7 +1,10 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { useDispatch } from 'react-redux';
+import { toggleTheme } from 'store/user/user.slice';
 
 const Home: NextPage = () => {
+  const dispatch = useDispatch();
   return (
     <div>
       <Head>
@@ -10,6 +13,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>Hello World</main>
+      <button onClick={() => dispatch(toggleTheme())}>Toggle Theme</button>
     </div>
   );
 };

@@ -6,6 +6,7 @@ const dark: ThemeType = {
 
   colors: {
     background: 'black',
+    font: 'white',
     primary: 'red',
     secondary: 'yellow',
   },
