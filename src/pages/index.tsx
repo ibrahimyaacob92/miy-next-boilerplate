@@ -40,6 +40,10 @@ const Home: NextPage = () => {
             and preference, just waiting to be populate
           </li>
           <li>
+            Plop code generator for Redux Store, Pages and Module Component
+            Boilerplate files. Just run few CLIs and its ready to be used
+          </li>
+          <li>
             Styled Components GlobalStyles and custom light & dark theme (feel
             free to build your own design system)
           </li>
@@ -50,8 +54,8 @@ const Home: NextPage = () => {
           <li>Example of Todo List using the Mockup API from JSON Server</li>
           <li>Simplified Layout for Navbar, Main & Footer</li>
           <li>Absolute Imports</li>
+          <li>Roboto Font</li>
         </ul>
-        <h2>Project Structure</h2>
         <h2>Coming Soon</h2>
         <ul>
           <li>

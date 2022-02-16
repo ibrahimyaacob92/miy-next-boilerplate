@@ -1,19 +1,29 @@
 import { configureStore } from '@reduxjs/toolkit';
-import userReducer from './user/user.slice';
 import createSagaMiddleware from '@redux-saga/core';
 import { all } from 'redux-saga/effects';
 import { createWrapper } from 'next-redux-wrapper';
+import userSaga from './user/user.saga';
+import todoSaga from './todo/todo.saga';
+import user from './user/user.slice';
+import todo from './todo/todo.slice';
 
+//TODO: Update this with Plop
 export function* rootSaga() {
   yield all([
     // add saga here
+    userSaga(),
+    todoSaga(),
   ]);
 }
 
 const makeStore = () => {
   const sagaMiddleware = createSagaMiddleware();
   const configuredStore = configureStore({
-    reducer: { user: userReducer },
+    reducer: {
+      // add reducers here
+      user,
+      todo,
+    },
     middleware: [sagaMiddleware],
     devTools: true,
   });

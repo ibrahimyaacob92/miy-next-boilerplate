@@ -9,6 +9,8 @@ const userSlice = createSlice({
     toggleTheme: ({ preference }) => {
       preference.theme = preference.theme === 'light' ? 'dark' : 'light';
     },
+
+    addCounter: () => {},
   },
   extraReducers: {
     [HYDRATE]: (state, { payload }) => {},

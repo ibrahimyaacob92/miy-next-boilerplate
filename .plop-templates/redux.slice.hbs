@@ -1,0 +1,18 @@
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { HYDRATE } from 'next-redux-wrapper';
+import initialState from './{{name}}.initialState';
+
+const {{name}}Slice = createSlice({
+  name: '{{name}}',
+  initialState,
+  reducers: {
+    // add your reducers function here
+  },
+  extraReducers: {
+    [HYDRATE]: (state, { payload }) => {},
+  },
+});
+
+export const {} = {{name}}Slice.actions;
+
+export default {{name}}Slice.reducer;
