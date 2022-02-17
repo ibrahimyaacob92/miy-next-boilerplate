@@ -1,3 +1,9 @@
 {
-  "cSpell.words": ["lightgray", "propfile", "reduxjs"]
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+		"source.fixAll.format": true
+	},
+	"cSpell.words": ["lightgray", "plopfile", "propfile", "reduxjs", "Roboto"]
 }
