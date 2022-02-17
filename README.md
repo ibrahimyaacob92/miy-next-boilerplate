@@ -10,29 +10,32 @@ Having the nightmare working on spaghetti frontend, We have developed few opinio
 - Avoid having className and styles in JSX
 - Avoid having JavaScript in JSX (except for rendering logics)
 - Have a consistent way of managing state by having everything in Redux Store
-- Use custom hook to refactor logics
 - Meaningful name the variable, component and hooks
+- Use custom hook to refactor logics
 - Identify which is base component and feature components(modules) 
 - Clean & Less Imports
+- Many More...
 
-Aside to that, there's a rise of developer productivity tool on horizon that could speed up development even more. So, we're keeping this up to date
+Aside to that, there's a rise of developer productivity tool on horizon that could speed up development even more. So, we're keeping this up to date!
 
 ## Features
 Main Stacks:
 - 🔥 Next.js for Static Site Generator, Server Side Rendering & built-in Routing System
 - 🥽 Type Safe with TypeScript
+- ⚛ Redux Toolkit + Saga for predictable state management
 - 🎨 Styled Component, avoid className at all cost
-- 
 
 Speed up the development with:
 - 💧 Plop CLI Code generator for Redux Store, Modules, Test and Pages
 - 🎭 JSON-Server is awesome for mocking up backend 
+- 🍦 React-Icons should suffice
 - 🏠 Absolute Imports
 
 Things We Already Done For You:
 - 💼 Redux Store for User and Todo. It's already wrapped for SSR too.
 - 💡 Styled Component Global Style and Theme Configuration for light and dark theme
 - 📜 A generic home-page with Nav, Main and Footer
+- 🏃‍♀️ Concurrently that runs both Next & JSON-Server on development mode
 - ✅ Todo App Example to showcase Redux, Redux-Saga, JSON-Server
 - ✒ Roboto font
 
@@ -73,8 +76,15 @@ Here comes the opinionated part.
 ```
 
 ## Getting Started
-Preferably use yarn
+Run the following command on your local environment, preferably, use yarn :
 
+```
+git clone --depth=1 https://github.com/ibrahimyaacob92/miy-next-boilerplate.git my-project-name
+cd my-project-name
+yarn install
+...
+yarn dev
+```
 
 ## Inspiration
-1. 
+Inspired by all the other React & Next Boilerplate out there
